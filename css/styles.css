@@ -43,7 +43,7 @@
     --color-hero-background: #6D6D7B;
     --color-white-background: #FFFFFF;
     --color-modal-background: #FCFCFC;
-    --color-header-border: #e7e9fc;
+    --color-border: #e7e9fc;
 }
 
 /* ===============RESET BUILT-IN STYLES=============== */
@@ -192,7 +192,7 @@ body {
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-text);
     background-color: var(--color-white-background);
-    border-bottom: 1px solid var(--color-header-border);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .page-header-container {
@@ -390,6 +390,20 @@ body {
 
 /* ===============STYLES PORTFOLIO.HTML=============== */
 
+.page-portfolio-container {
+    margin-top: 96px;
+    margin-bottom: 120px;
+}
+
+/* -----SORTING----- */
+
+.project-sorting-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
 .project-sorting-btn {
     font-family: var(--font-family-page);
     font-size: var(--font-size-medium-text);
@@ -397,22 +411,47 @@ body {
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-btn);
     cursor: pointer;
-    border: none;
     color: var(--color-primary-brand);
-    background-color: var(--color-light);
+    background-color: var(--color-light);  
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 12px 24px;
 }
 
-.actived-btn {
+.project-sorting-btn:hover,
+.project-sorting-btn:focus {
     color: var(--color-white-background);
     background-color: var(--color-pressed-state);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+            0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent;
 }
 
-.section-projects-title {
+/* -----PROJECTS----- */
+
+.projects-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.projects-gallery-items {
+    border: 1px solid var(--color-border);
+    border-top: none;
+    width: calc((100% - 2*24px) / 3);
+}
+
+.projects-gallery-text {
+    padding: 32px 16px;
+}
+
+.projects-gallery-title {
     font-size: var(--font-size-third-title);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-small);
     letter-spacing: var(--letter-spacing-third-title);
     color: var(--color-dark);
+    margin-bottom: 8px;
 }
 
 
