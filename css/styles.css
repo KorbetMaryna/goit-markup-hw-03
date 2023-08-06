@@ -87,12 +87,11 @@ body {
     color: var(--color-text);
 }
 
+/* ===============GENERAL STYLES=============== */
 .container {
-    max-width: 1440px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-left: 156px;
-    margin-right: 156px;
+    max-width: 1158px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -118,6 +117,8 @@ body {
     letter-spacing: var(--letter-spacing-logo);
     text-transform: uppercase;
     color: var(--color-primary-brand);
+
+    padding-right: 76px;
 }
 
 .primary-brand-header {
@@ -183,9 +184,23 @@ body {
     background-color: var(--color-white-background);
 }
 
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .page-header-navigation {
     font-weight: var(--font-weight-medium);
     color: var(--color-dark);
+    display: flex;
+    gap: 40px;
+}
+
+.page-navigation-container {
+    display: flex;
 }
 
 .page-navigation-link {
@@ -195,6 +210,11 @@ body {
 .page-header-address {
     font-weight: var(--font-weight-regular);
     font-style: normal;
+}
+
+.page-header-address-container {
+    display: flex;
+    gap: 40px; 
 }
 
 .page-header-address-list {
