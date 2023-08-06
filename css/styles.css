@@ -98,6 +98,11 @@ body {
     margin: 0 auto;
 }
 
+.container-sections {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -282,16 +287,32 @@ body {
     background-color: var(--color-pressed-state);
 }
 
-/* -----ADVANTAGES----- */
+/* -----SECTION ADVANTAGES----- */
 
 .section-advantages-styles {
     background-color: var(--color-white-background);
-    text-align: center;
+}
+
+.section-advantages-container {
+    margin-top: 120px;
+}
+
+.section-advantages-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.section-advantages-items {
+    width: 264px; 
 }
 
 .section-advantages-title {
     line-height: var(--line-height-small);
+    margin-bottom: 8px;
 }
+
+/* -----SECTION DOING----- */
 
 .section-doing-styles {
     background-color: var(--color-white-background);
