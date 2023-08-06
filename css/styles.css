@@ -206,7 +206,6 @@ body {
     color: var(--color-dark);
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .page-navigation-container {
@@ -220,6 +219,7 @@ body {
 
 .page-navigation-link {
     color: var(--color-dark);
+    padding: 24px 0;
 }
 
 .page-header-address {
@@ -444,6 +444,7 @@ body {
 .projects-gallery-text {
     padding: 32px 16px;
     border: 1px solid var(--color-border);
+    border-top: none;
 }
 
 .projects-gallery-title {
