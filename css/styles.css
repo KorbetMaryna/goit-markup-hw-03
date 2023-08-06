@@ -128,7 +128,6 @@ body {
     letter-spacing: var(--letter-spacing-logo);
     text-transform: uppercase;
     color: var(--color-primary-brand);
-    padding-right: 76px;
 }
 
 .primary-brand-header {
@@ -215,6 +214,10 @@ body {
     display: flex;
 }
 
+.page-header-logo {
+    margin-right: 76px;
+}
+
 .page-navigation-link {
     color: var(--color-dark);
 }
@@ -238,12 +241,19 @@ body {
 .page-footer-styles {
     background-color: var(--color-dark);
 }
+
+.page-footer-container {
+    padding: 100px 0;
+}
+
 .page-footer-text {
     font-size: var(--font-size-medium-text);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-text);
-    color: var(--color-light)
+    color: var(--color-light);
+    width: 264px;
+    margin-top: 16px;
 }
 
 /* ===============STYLES INDEX.HTML=============== */
