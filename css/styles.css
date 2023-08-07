@@ -220,6 +220,7 @@ body {
 .page-navigation-link {
     color: var(--color-dark);
     padding: 24px 0;
+    display: block;
 }
 
 .page-header-address {
@@ -330,6 +331,7 @@ body {
 .section-doing-styles {
     background-color: var(--color-white-background);
     text-align: center;
+    padding-top: 0;
 }
 
 .section-doing-title {
@@ -436,8 +438,6 @@ body {
 }
 
 .projects-gallery-items {
-    border: 1px solid var(--color-border);
-    border-top: none;
     width: calc((100% - 2*24px) / 3);
 }
 
